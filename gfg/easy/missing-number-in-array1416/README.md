@@ -37,7 +37,7 @@ Explanation: Only 1 is present so the missing element is 2.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-12T02:49:49.694Z  
+**Submitted:** 2026-10-12T02:56:51.618Z  
 
 ```cpp
 
