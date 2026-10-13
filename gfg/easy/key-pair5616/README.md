@@ -32,13 +32,14 @@ Explanation: No pair is possible as only one element is present in arr[]
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-13T03:44:22.479Z  
+**Submitted:** 2026-10-13T03:52:07.373Z  
 
 ```cpp
 class Solution {
   public:
     bool twoSum(vector<int>& arr, int target) {
         // code here
+        //first approach using map 
         map<int,int>mpp;
         for(int i=0;i<arr.size();i++){
             int a=arr[i];
@@ -47,6 +48,19 @@ class Solution {
                 return true;
             }
             mpp[a]=i;
+        }
+        return false;
+        //2nd approach using two pointer
+        int left=0,right=arr.size()-1;
+        sort(arr.begin(),arr.end());
+        while(left<right){
+            int sum=arr[left]+arr[right];
+            if(sum==target){
+                return true;
+            }
+            else if(sum<target) left++;
+            else right--;
+            
         }
         return false;
     }
