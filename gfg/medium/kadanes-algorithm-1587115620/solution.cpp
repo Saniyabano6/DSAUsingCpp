@@ -12,7 +12,7 @@ class Solution {
             }
         }*/
         //   return maxm;
-         //kadane algorithm 
+         //kadane algorithm : Kadane’s Algorithm is an \(O(n)\) time and \(O(1)\) space approach that finds the maximum sum of a contiguous subarray by maintaining a running sum and resetting it when it becomes negative.
          long long sum=0, maxi=LONG_MIN;
          for(int i=0;i<arr.size();i++){
              sum+=arr[i];
