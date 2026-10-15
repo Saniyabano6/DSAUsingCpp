@@ -32,7 +32,7 @@ Explanation: The subarray [5, 4, 1, 7, 8] has the largest sum 25.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T02:28:06.090Z  
+**Submitted:** 2026-10-15T02:33:42.072Z  
 
 ```cpp
 class Solution {
@@ -49,7 +49,7 @@ class Solution {
             }
         }*/
         //   return maxm;
-         //kadane algorithm 
+         //kadane algorithm : Kadane’s Algorithm is an \(O(n)\) time and \(O(1)\) space approach that finds the maximum sum of a contiguous subarray by maintaining a running sum and resetting it when it becomes negative.
          long long sum=0, maxi=LONG_MIN;
          for(int i=0;i<arr.size();i++){
              sum+=arr[i];
