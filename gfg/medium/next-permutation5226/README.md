@@ -34,7 +34,7 @@ Explanation: The next permutation of the given array is [3, 4, 5, 1, 2].
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T17:48:58.445Z  
+**Submitted:** 2026-10-19T17:49:27.761Z  
 
 ```cpp
 class Solution {
