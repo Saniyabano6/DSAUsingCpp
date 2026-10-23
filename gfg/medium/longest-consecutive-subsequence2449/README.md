@@ -32,13 +32,13 @@ Explanation: The longest consecutive subsequence is 9, 10, 11, 12, 13, 14, 15, w
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T03:07:44.060Z  
+**Submitted:** 2026-10-23T03:08:19.646Z  
 
 ```cpp
 class Solution {
   public:
     int longestConsecutive(vector<int>& arr) {
-        // code here
+        // code here : better approach
          sort(arr.begin(), arr.end());
     int largest=1;
     int cnt=0;
