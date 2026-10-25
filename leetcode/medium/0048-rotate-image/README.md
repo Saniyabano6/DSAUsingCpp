@@ -38,8 +38,8 @@ Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 10.2 MB (beats 33.07%)  
-**Submitted:** 2026-10-25T04:30:13.777Z  
+**Memory:** 10 MB (beats 99.03%)  
+**Submitted:** 2026-10-25T04:31:06.690Z  
 
 ```cpp
 
