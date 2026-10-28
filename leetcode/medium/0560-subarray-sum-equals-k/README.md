@@ -37,29 +37,25 @@ Output: 2
 ## Solution
 
 **Language:** C++  
-**Runtime:** 38 ms (beats 72.99%)  
-**Memory:** 45.3 MB (beats 71.26%)  
-**Submitted:** 2026-10-13T03:22:58.549Z  
+**Runtime:** 88 ms (beats 22.08%)  
+**Memory:** 53.9 MB (beats 5.57%)  
+**Submitted:** 2026-10-28T03:34:05.182Z  
 
 ```cpp
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
-        unordered_map<int,int> preSumMap;  // prefixSum -> frequency
-        preSumMap[0] = 1;                  // empty prefix, handles subarrays starting at index 0
-        int sum = 0, count = 0;
-
-        for (int i = 0; i < nums.size(); i++) {
-            sum += nums[i];                // running prefix sum
-            int rem = sum - k;             // prefix we need to have seen before
-
-            // every earlier prefix equal to rem gives one valid subarray ending at i
-            if (preSumMap.find(rem) != preSumMap.end())
-                count += preSumMap[rem];
-
-            preSumMap[sum]++;              // record current prefix sum
+        map<int,int>mpp;
+        mpp[0]=1;
+        int preSum=0;
+        int cnt=0;
+        for(int i=0;i<nums.size();i++){
+            preSum+=nums[i];
+            int remove=preSum-k;
+            cnt+=mpp[remove];
+            mpp[preSum]+=1;
         }
-        return count;
+        return cnt;
     }
 };
 ```
