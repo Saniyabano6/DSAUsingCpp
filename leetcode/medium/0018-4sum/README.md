@@ -41,9 +41,9 @@ Output: [[2,2,2,2]]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 20 ms (beats 71.82%)  
-**Memory:** 17.4 MB (beats 52.91%)  
-**Submitted:** 2026-10-31T11:41:56.229Z  
+**Runtime:** 21 ms (beats 66.49%)  
+**Memory:** 17.5 MB (beats 52.91%)  
+**Submitted:** 2026-10-31T11:46:21.399Z  
 
 ```cpp
 
